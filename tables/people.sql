@@ -18,5 +18,5 @@ ALTER TABLE users RENAME COLUMN handle TO username;
 -- Agrega la columna "password" de tipo TEXT a la tabla
 ALTER TABLE users ADD COLUMN password TEXT;
 
--- Muestra la información
+-- Muestra los datos de la tabla
 pragma table_info( ' users ' ) ;
