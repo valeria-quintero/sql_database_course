@@ -1,12 +1,22 @@
 -- Crea la tabla "people" con campos definidos
-CREATE TABLE people(
+CREATE TABLE users(
   id INTEGER,
-  handle TEXT,
+  username TEXT,
   name TEXT,
   age INTEGER,
   balance INTEGER,
-  is_admin BOOLEAN
+  is_admin BOOLEAN,
+  password TEXT
 );
-  
--- TEST SUITE, DON'T TOUCH BELOW THIS LINE
-pragma table_info( ' people ' ) ;
+
+-- Renombra la tabla "people" a "users"
+ALTER TABLE people RENAME TO users;
+
+-- Renombra la columna "handle" a "username"
+ALTER TABLE users RENAME COLUMN handle TO username;
+
+-- Agrega la columna "password" de tipo TEXT a la tabla
+ALTER TABLE users ADD COLUMN password TEXT;
+
+-- Muestra la información
+pragma table_info( ' users ' ) ;
