@@ -11,3 +11,6 @@ VALUES (2, "Lance", 20, "US", "LanChr", "b00tdevisbest", false);
 
 INSERT INTO users (id, name, age, country_code, username, password, is_admin)
 VALUES (2, "Tiffany", 28, "US", "Tifferoon", "autoincrement", true);
+
+-- Cuenta todas las filas de la tabla
+SELECT count(*) FROM users
