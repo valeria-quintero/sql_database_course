@@ -17,3 +17,8 @@ AND age < 18;
 SELECT *
 FROM users
 WHERE name LIKE 'Al%';
+
+-- Operador "_"
+SELECT * 
+FROM users
+WHERE name LIKE 'Al___';
