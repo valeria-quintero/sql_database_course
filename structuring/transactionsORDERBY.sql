@@ -1,4 +1,4 @@
 -- ORDER BY se utiliza para ordenar los resultados de una consulta en orden ascendente o descendente
 SELECT * FROM transactions
 WHERE amount BETWEEN 10 AND 80
-ORDER BY amount
+ORDER BY amount;
